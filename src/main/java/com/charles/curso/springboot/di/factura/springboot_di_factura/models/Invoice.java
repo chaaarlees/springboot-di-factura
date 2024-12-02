@@ -14,7 +14,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
 @Component
-@RequestScope
+@RequestScope //Cambiar el scope del bean de Singleton a Request
 @JsonIgnoreProperties({"targetSource", "advisors"})//ignorar atributos residuales del proxy
 public class Invoice {
 
